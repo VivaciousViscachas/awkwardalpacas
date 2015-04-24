@@ -59,7 +59,7 @@ angular.module('lunchCorgi.events', [])
     $scope.event = evt;
     var userToken = localStorage.getItem('token');
     Events.joinEvent(evt, userToken);
-    $scope.viewAllEvents(); //re-render page after clicking attend
+    $scope.viewAllEvents(); //re-render page after clicking attend    
   }
 
   $scope.addEvent = function() {
@@ -124,6 +124,8 @@ angular.module('lunchCorgi.events', [])
   // populate new event form with default values
   $scope.initNewEventForm()
 })
+
+
 
 
 
